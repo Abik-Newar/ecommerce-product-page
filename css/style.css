@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    /* Primary Colors */
+    --Orange: hsl(26, 100%, 55%);
+    --Pale_orange: hsl(25, 100%, 94%);
+
+    /* Neutral */
+
+    --Very_dark_blue: hsl(220, 13%, 13%);
+    --Dark_grayish_blue: hsl(219, 9%, 45%);
+    --Grayish_blue: hsl(220, 14%, 75%);
+    --Light_grayish_blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black : hsl(0, 0%, 0%); /*(with 75% opacity for lightbox background)*/
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+rootNav{
+    width: 100vw;
+}
+
+#nav{
+    width:  80%;
+    border-bottom: 1px solid var(--Grayish_blue);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 12rem;
+    
+}
+
+.navbar{
+    width: 40%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    height: 117px;
+    border-bottom: 3px solid white;
+    transition: 0.5s; 
+}
+.navbar ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--Grayish_blue);
+    font-family: Kumbh Sans;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.navbar ul li:hover{
+    border-bottom: 3px solid var(--Orange);
+}
+
+.navbar ul li a:hover{
+    color: var(--Dark_grayish_blue);
+    
+}
+
+.rightNav{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.rightContent{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.rightNav .cart img{
+    opacity: 80%;
+}
+
+.rightNav .cart img:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+.rightNav .profile img{
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.rightNav .profile img:hover{
+    border: 2px solid var(--Orange);
+}
+
