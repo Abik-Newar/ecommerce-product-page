@@ -118,3 +118,159 @@ rootNav{
     border: 2px solid var(--Orange);
 }
 
+
+.heroSection{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* .heroSection img{
+    width: 200px;
+} */
+.imgSec{
+    width: 60%;
+}
+
+.mainImg{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mainImg img{
+    width: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tmbImg{
+    width: 55%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tmbImg img{
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: 0.5s;
+}
+
+.tmbImg img:hover, .tmbImg .active{
+    border: 3px solid var(--Orange);
+    opacity: 60%;
+}
+
+.textSec{
+    width: 40%;
+    font-family: Kumbh Sans;
+}
+
+.textSec h4{
+    color: var(--Orange);
+}
+.textSec h1{
+    color: var(--Black);
+    font-size: 3rem;
+}
+.textSec p{
+    color: var(--Dark_grayish_blue);
+    width: 80%;
+}
+
+.pricing{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing h2, .pricing p{
+    margin: 5px;
+}
+.pricing .fiftyPercent{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--Pale_orange);
+    text-align: center;
+}
+
+.textSec .disabledPrice{
+    margin: 0px;
+    color: var(--Grayish_blue);
+    text-decoration: line-through;
+}
+
+.buttons{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buttons .increment{
+    width: 35%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: var(--Light_grayish_blue);
+}
+
+.buttons .increment .minus,
+.buttons .increment .plus{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.buttons .increment .minus:hover,
+.buttons .increment .plus:hover{
+    fill: currentColor;
+    fill: aqua;
+}
+
+.numberI h4{
+    color: var(--Dark_grayish_blue);
+}
+
+.atc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    background-color: var(--Orange);
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.atc .container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.atc .container h4{
+    color: var(--White);
+}
