@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -30,7 +30,7 @@
     <nav class="rootNav">
       <div class="navigation" id="nav">
         <div class="logo">
-          <img src="/images/logo.svg" alt="sneakers" />
+          <img src="images/logo.svg" alt="sneakers" />
         </div>
 
         <div class="navbar">
@@ -45,11 +45,11 @@
         <div class="rightNav">
           <div class="rightContent">
             <div class="cart">
-              <img src="/images/icon-cart.svg" alt="cart" />
+              <img src="images/icon-cart.svg" alt="cart" id="shopCart" />
             </div>
-  
+
             <div class="profile">
-              <img src="/images/image-avatar.png" alt="avatar" />
+              <img src="images/image-avatar.png" alt="avatar" />
             </div>
           </div>
         </div>
@@ -57,23 +57,73 @@
     </nav>
 
     <div class="heroSection">
-      <div class="imgSec">
-        <div class="mainImg">
-          <img src="images/image-product-1.jpg" alt="Shoeimage">
+      <div class="atcModal" id="atcModal">
+        <div class="titleCart">
+          <h3>Cart</h3>
         </div>
 
-        <div class="tmbImg">
+        <div class="container">
+          <h5 class="noItems" id="noItems">There is no items!!</h5>
+          <div class="modalList" id="cartModal">
+            <div class="imgPart">
+              <img src="images/image-product-1.jpg" />
+            </div>
+            <div class="textPart">
+              <h5>Fall Limisted Edition Sneakers</h5>
+              <div class="textsecond">
+                <p>$125.00 X <span id="modalQnty">1</span></p>
+                <p class="totalPrice">$<span id="totalPrice"></span></p>
+                <img id="deleteBtn" src="images/icon-delete.svg" alt="delete">
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="checkoutBtn" id="checkOut">
+            <h4>Chekout</h4>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="imgSec" >
+        <div class="mainImg" id="mainImg">
+          <img id="imgNext" src="images/image-product-1.jpg" alt="Shoeimage" />
+        </div>
+
+        <div class="thumbnail">
           <div class="otherImg">
-            <img src="images/image-product-1-thumbnail.jpg" class="active" alt="thumbnail">
+            <img
+              id="imgMenu1"
+              src="images/image-product-1-thumbnail.jpg"
+              class="active"
+              alt="thumbnail"
+            />
           </div>
           <div class="otherImg">
-            <img src="images/image-product-2-thumbnail.jpg" alt="thumbnail">
+            <img
+              id="imgMenu2"
+              src="images/image-product-2-thumbnail.jpg"
+              class="noactive"
+              alt="thumbnail"
+            />
           </div>
           <div class="otherImg">
-            <img src="images/image-product-3-thumbnail.jpg" alt="thumbnail">
+            <img
+              id="imgMenu3"
+              src="images/image-product-3-thumbnail.jpg"
+              class="noactive"
+              alt="thumbnail"
+            />
           </div>
           <div class="otherImg">
-            <img src="images/image-product-4-thumbnail.jpg" alt="thumbnail">
+            <img
+              id="imgMenu4"
+              src="images/image-product-4-thumbnail.jpg"
+              class="noactive"
+              alt="thumbnail"
+            />
           </div>
         </div>
       </div>
@@ -83,52 +133,103 @@
       <div class="textSec">
         <h4>Sneaker Company</h4>
         <h1>Fall Limited Edition Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything the
-          weather can offer.</p>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
 
         <div class="pricing">
-            <h2>$125.00</h2> 
-            <div class="fiftyPercent">
-              <p>50%</p>
-            </div>
-          
+          <h2>$125.00</h2>
+          <div class="fiftyPercent">
+            <p>50%</p>
+          </div>
         </div>
         <h4 class="disabledPrice">$250.00</h4>
 
         <div class="buttons">
           <div class="increment">
-            <div class="minus">
-              <img src="images/icon-minus.svg" alt="minus">
+            <div class="minus" id="minusQuan">
+              <img src="images/icon-minus.svg" alt="minus" />
             </div>
-            <div class="numberI">
-              <h4>0</h4>
+            <div class="numberI" >
+              <h4 id="quantity">1</h4>
             </div>
-            <div class="plus">
-              <img src="images/icon-plus.svg" alt="plus">
+            <div class="plus" id="plusQuan">
+              <img src="images/icon-plus.svg" alt="plus" />
             </div>
           </div>
-  
-          <div class="atc">
+
+          <div class="atc" id="atcBtn">
             <div class="container">
-              <img src="images/icon-cart2.svg" alt="atc">
-            <h4>Add to cart</h4>
+              <img src="images/icon-cart2.svg" alt="atc" />
+              <h4>Add to cart</h4>
             </div>
           </div>
-  
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="lightBox" id="lightBox">
+      <div class="close">
+        <img id="closeLightBox" src="images/icon-close.svg" alt="icon-close">
+      </div>
+      <div class="imgSec" >
+        <div class="mainImg">
+          <div class="prevBtn" id="prevBtn">
+          <img src="images/icon-previous.svg" alt="icon-previous">
+          </div>
+          <img id="changeImage" src="images/image-product-1.jpg" alt="Shoeimage" />
+          <div class="nextBtn" id="nextBtn">
+            <img src="images/icon-next.svg" alt="icon-next">
+          </div>
         </div>
 
+        <div class="thumbnail">
+          <div class="otherImg">
+            <img
+              id="imgMenu1"
+              src="images/image-product-1-thumbnail.jpg"
+              class="active"
+              alt="thumbnail"
+            />
+          </div>
+          <div class="otherImg">
+            <img
+              id="imgMenu2"
+              class=""
+              src="images/image-product-2-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+          <div class="otherImg">
+            <img
+              id="imgMenu3"
+              src="images/image-product-3-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+          <div class="otherImg">
+            <img
+              id="imgMenu4"
+              src="images/image-product-4-thumbnail.jpg"
+              alt="thumbnail"
+            />
+          </div>
+        </div>
       </div>
-
-      
     </div>
+    
+
 
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Abik Newar</a>.
     </div>
 
     <script src="js/index.js"></script>
